@@ -1,0 +1,9 @@
+[
+  {
+    "id": 83,
+    "username": "Mike",
+    "email": "mike@mike.mike",
+    "password": "$argon2id$v=19$m=131072,t=6,p=1$viIv/FeHZaS/GDHXYCmuJg$XIXSBFG12t+jUo6TaBwLLoSP+wZ5k15y8poMGCQQJLw",
+    "roles": ["admin", "user"]
+  }
+]

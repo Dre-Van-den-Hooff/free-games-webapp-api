@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.login {
+  width: 85%;
+  max-width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.toggles {
+  text-align: right;
+}
+
+.toggles .theme {
+  float: right;
+}
+
+.toggles .back {
+  float: left;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.input {
+  margin-bottom: 1em;
+}
+
+.nav-container {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 16px;
+}
+
+.nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font-size: 1.3em;
+}
+
+.nav-container ul li {
+  padding: 0.5em 1em;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
+
+.nav-container ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav-container ul li a:hover {
+  text-decoration: none;
+}
+
+.filter-box {
+  margin: 1em;
+  padding: 20px;
+  padding-right: 60px;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.filter-box a:hover {
+  text-decoration: none;
+  color: #14b4b4;
+}
+
+.search-box {
+  margin: 1em;
+  padding: 20px;
+  border-radius: 12px;
+  margin-right: 10px;
+  max-width: 300px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.cards-wrapper {
+  display: inline-block;
+  max-width: 436px;
+  max-height: 436px;
+}
+
+.cards-wrapper .cards {
+  border-radius: 12px;
+  padding-top: 0.5em;
+  margin: 1em;
+  padding-bottom: 1em;
+}
+
+.cards-wrapper .cards .cards-info {
+  text-align: start;
+}
+
+.cards-wrapper .cards .cards-info .info-container {
+  margin-left: 1em;
+}
+
+.cards-wrapper .cards img {
+  border-radius: 12px;
+  width: 365px;
+  height: 206px;
+  margin: 1.2em;
+}
+
+.cards-wrapper .cards .wishlist-button {
+  text-align: right;
+  margin-right: 1em;
+}
+
+.wishlist-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wishlist-container .wishlist-items {
+  border-radius: 12px;
+  padding-top: 0.5em;
+  margin: 1em;
+  padding-bottom: 0.5em;
+  width: 70%;
+}
+
+.wishlist-container .wishlist-items .wishlist-info .info-container {
+  font-size: larger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.5em;
+}
+
+.wishlist-container .wishlist-items .wishlist-info .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.wishlist-container .wishlist-items .wishlist-info img {
+  border-radius: 12px;
+  width: 365px;
+  height: 206px;
+  margin: 1.2em;
+}
+
+.wishlist-container .wishlist-items .delete-item {
+  text-align: right;
+  margin-right: 1em;
+}
+
+.dropzone {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-width: 2em;
+  border-radius: 12px;
+  border: 3px solid teal;
+  border-style: dashed;
+  outline: none;
+  -webkit-transition: border 0.24s ease-in-out;
+  transition: border 0.24s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  .search-input {
+    width: 50%;
+    float: right;
+  }
+  .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards-wrapper .cards {
+    width: 80%;
+  }
+  .cards-wrapper .cards img {
+    margin: 0.7em;
+    width: 90%;
+    height: 152.38px;
+  }
+  .cards-wrapper .cards .cards-info .info-container {
+    margin-left: 4em;
+  }
+  .wishlist-container .wishlist-items {
+    width: 80%;
+  }
+  .wishlist-container .wishlist-items .wishlist-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wishlist-container .wishlist-items .wishlist-info img {
+    width: 90%;
+    height: 152.38px;
+  }
+  .wishlist-container .wishlist-items .wishlist-info .info-container {
+    font-size: medium;
+    margin-bottom: 1em;
+  }
+  .form-wrapper .form {
+    width: 80%;
+  }
+  .account-container .account-wrapper {
+    width: 80%;
+  }
+  .account-container .account-wrapper h2 {
+    margin-bottom: 1em;
+  }
+  .account-container .account-wrapper .account-input {
+    width: 80%;
+  }
+  .account-container .account-wrapper .account-button {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
